@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.task-todo{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-between;
+    min-width: 50vw;
+    min-height: 8vh;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.task-details{
+    font-size: 23px;
+    background-color: aliceblue;
+    padding: 7px;
+    border-radius: 20px;
+    min-width: 94%;
+    max-width: 100%;
+    min-height: 5%;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f3f4f6;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.06);
+    font-size: 1.1rem;
+    overflow-x: hidden;
+    word-break: break-word;
+}
+.complete{
+    visibility: hidden;
+    position: absolute;
+}
+#custom-check{
+    border: 2px solid darkgrey;
+    background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.complete:checked + #custom-check::after{
+    content: '\2713';
+    position: absolute;
+    top: -4px;
+    left: 2.5px;
+    font-size: 20px;
+    color: rgb(5, 248, 5);
+    z-index: 100;
+    font-size: 25px;
+}
+
+/* Stylish task cards */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+.task-card {
+  background: #f8fafc;
+  border-radius: 1.25rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.10);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1px solid #e0e7ff;
+}
+.task-card:hover {
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.18);
+  transform: translateY(-2px) scale(1.02);
+}
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+.custom-check {
+  cursor: pointer;
+  background: #e0e7ff;
+  border-radius: 50%;
+  padding: 0.3rem 0.5rem;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.check-icon {
+  font-size: 1.5rem;
+  color: #6366f1;
+}
+.task-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.15rem;
+  flex: 1;
+  word-break: break-word;
+}

@@ -1,0 +1,79 @@
+#task-wrapper {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(99, 102, 241, 0.08);
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px 4px 3px black;
+}
+
+.fade {
+  display: none;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #6366f1;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+button {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+button:hover {
+  background: #4f46e5;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.12);
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.task-card {
+  background: #f3f4f6;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  #task-wrapper {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  label {
+    font-size: 1rem;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .task-card {
+    padding: 0.7rem 0.7rem;
+    font-size: 1rem;
+  }
+}

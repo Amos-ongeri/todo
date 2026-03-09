@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.complete-padding{
+    padding: 3rem 3.5rem;
+    min-width: 50%;
+    margin: 0 auto;
+}
+.clear{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+button {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+  cursor: pointer;
+}
+button:hover {
+  background: #4f46e5;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.12);
+}
+@media (max-width: 700px) {
+  .complete-padding {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* New Account page layout */
+#layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5px 0;
+}
+#user{
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 50%;
+    backdrop-filter: blur(7px);
+    /* background: #000; */
+}
+#user-icon{
+    color: aliceblue;
+    font-size: 90px;
+}
+#account{
+    display: flex;
+    /* background: #000; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    border-radius: 5px;
+    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    margin-top: 19px;
+}
+#detail{
+    margin-right: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#description{
+    margin-left: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.change-pass{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(41, 123, 123);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.account-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(99, 102, 241, 0.08);
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.account-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.account-avatar {
+  font-size: 2.5rem;
+  color: #6366f1;
+  background: #e0e7ff;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.account-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6366f1;
+}
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.account-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  background: #f3f4f6;
+  border-radius: 0.75rem;
+  padding: 0.7rem 1.2rem;
+  font-weight: 500;
+}
+.account-label {
+  color: #6366f1;
+}
+.account-value {
+  color: #3b3b3b;
+  padding-left: 3rem;
+}
+.change-pass {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.change-pass:hover {
+  background: #4338ca;
+}
+@media (max-width: 700px) {
+  .account-card {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .account-title {
+    font-size: 1.3rem;
+  }
+  .account-row {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+  }
+}

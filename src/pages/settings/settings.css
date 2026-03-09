@@ -1,0 +1,220 @@
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 1.2rem 0 0.7rem 0;
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 2rem;
+}
+.top-nav-link {
+  color: #6366f1;
+  font-size: 1.08rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.top-nav-link:hover {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+.top-nav-link.active {
+  background: #6366f1;
+  color: #fff;
+}
+
+/* New Settings page layout */
+#layout3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5px 0;
+}
+.settings-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(99, 102, 241, 0.08);
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.settings-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.settings-option {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.set-bg-btn {
+  background: #e0e7ff;
+  color: #6366f1;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.set-bg-btn:hover {
+  background: #6366f1;
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .topNav {
+    gap: 1rem;
+    padding: 1rem 0 0.5rem 0;
+  }
+  .top-nav-link {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .settings-title {
+    font-size: 1.3rem;
+  }
+  .settings-option {
+    font-size: 1rem;
+  }
+  .set-bg-btn {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 700px) {
+  .settings-card {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .settings-title {
+    font-size: 1.3rem;
+  }
+  .set-bg-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .topNav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.7rem 0 0.3rem 0;
+    border-radius: 0 0 10px 10px;
+  }
+  .top-nav-link {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .settings-title {
+    font-size: 1.1rem;
+  }
+  .settings-option {
+    font-size: 0.95rem;
+  }
+  .set-bg-btn {
+    font-size: 0.9rem;
+  }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#layout3{
+    display: flex;
+    position: relative;
+}
+.settings-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.settings-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.settings-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: #3b3b3b;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+.settings-option input[type="checkbox"] {
+  accent-color: #6366f1;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.image-selector-page {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 2rem 2.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.selector-img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.set-bg-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.set-bg-btn:hover {
+  background: #4338ca;
+}
